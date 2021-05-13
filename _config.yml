@@ -85,7 +85,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a **New Developer!**"
   location         : "Korea"
-  email            :
+  email            : moonnr94@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
