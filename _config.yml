@@ -81,9 +81,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "RACEJB"
+  name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **New Developer!**"
+  bio              : ""
   location         : "Korea"
   email            : moonnr94@gmail.com
   links:
