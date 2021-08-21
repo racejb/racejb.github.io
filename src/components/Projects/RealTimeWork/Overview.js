@@ -116,7 +116,7 @@ const Overview = () => {
           <ul id="body">
             <li>
               <p>프로젝트 설명</p>
-              <p>실시간으로 업무를 소통하는 시스템입니다.</p>
+              <p>React를 기반으로한 실시간으로 업무를 소통하는 시스템입니다.</p>
             </li>
             <li>
               <p>프로젝트 제작 기간</p>
@@ -124,7 +124,7 @@ const Overview = () => {
             </li>
             <li>
               <p>프로젝트 유형</p>
-              <p>socket.io/ 웹&#183;앱 사이트 제작 / Refactoring</p>
+              <p>socket.io / 웹&#183;앱 사이트 제작 / Refactoring</p>
             </li>
             <li>
               <p>프로젝트 참여인원</p>

@@ -41,6 +41,7 @@ const ProcessStyle = styled.div`
           width: 100%;
           cursor: ${props => (props.zoom ? 'zoom-out' : 'zoom-in')};
         }
+        p { font-size: 0.8rem; }
       }
     }
   }
@@ -90,30 +91,41 @@ const ProcessStyle = styled.div`
 
 const Process = () => {
   const [zoom, setZoom] = useState(false);
-
+ 
   return (
     <ProcessStyle zoom={zoom}>
       <div className="bar"></div>
       <div className="item">
-        <strong className="num">04</strong>
+        <strong className="num">03</strong>
         <div className="detail">
           <ul id="head">
-            <strong>작동 프로세스</strong>
-            <p>Working Process</p>
+            <strong>주요 기능</strong>
+            <p>Main Function</p>
           </ul>
+
           <ul id="body">
             <img
-              alt="process"
-              src="/src/assets/images/process.jpg"
+              alt="function1"
+              src="/src/assets/test.gif"
+              
               onClick={() => setZoom(!zoom)}
             />
+
+            <p>기능 추가 및 gif 작업 진행중...</p>
+            {/* <img
+              alt="function1"
+              src="/src/assets/test.gif"
+              
+              onClick={() => setZoom(!zoom)}
+            /> */}
           </ul>
         </div>
       </div>
+      
       <div id="zoom">
         <img
-          alt="process"
-          src="/src/assets/images/process.jpg"
+          alt="function1"
+          src="/src/assets/test.gif"
           onClick={() => setZoom(!zoom)}
         />
       </div>

@@ -137,7 +137,7 @@ const ThirdStyle = styled.section`
 
             #linux {
               width: ${props => (props.spin == 2 ? '55%' : '0%')};
-              background: linear-gradient(90deg, #6291ee, #c1c1f3);
+              background: linear-gradient(90deg, #cc5285, #e57e88);
               transition-delay: ${props => (props.spin === 2 ? '3.4s' : '0s')};
             }
 

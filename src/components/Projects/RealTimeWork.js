@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Overview from './RealTimeWork/Overview';
 import Goal from './RealTimeWork/Goal';
-// import Process from './RealTimeWork/Process';
+import Process from './RealTimeWork/Process';
 import Used from './RealTimeWork/Used';
 // import Architecture from './RealTimeWork/Architecture';
 // import RealTimeWork from '@images/RealTimeWork3.png';
@@ -16,7 +16,7 @@ const RealTimeWorkStyle = styled.article`
   color: white;
 
   .intro {
-    height: 400px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +64,7 @@ const RealTimeWork = () => {
       <Overview />
       <Goal />
       {/* <Architecture /> */}
-      {/* <Process /> */}
+      <Process />
       <Used />
     </RealTimeWorkStyle>
   );

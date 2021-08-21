@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import onClickOutside from "react-onclickoutside";
 
 const NavStyle = styled.nav`
   position: fixed;
@@ -248,9 +249,12 @@ const NavStyle = styled.nav`
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  Nav.handleClickOutside = () => setOpen(false);
 
   return (
-    <NavStyle open={open}>
+    <NavStyle open={open}
+    onKeyDown={(e) => e.code == "Escape" && setOpen(!open)}
+    >
       <button className="nav__btn" onClick={() => setOpen(!open)}>
         <span></span>
         <span></span>
@@ -300,4 +304,9 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+const clickOutsideConfig = {
+  handleClickOutside: () => Nav.handleClickOutside
+};
+
+
+export default onClickOutside(Nav, clickOutsideConfig);

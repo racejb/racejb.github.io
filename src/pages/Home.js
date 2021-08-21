@@ -17,7 +17,7 @@ const Home = () => {
   const [scroll, setScroll] = useState(true);
   const [articleNum] = useState(4);
 
-  const wheelEvent = e => {
+  const wheelEvent = (e) => {
     if (scroll) {
       setScroll(false);
       if (e.deltaY > 0) {
@@ -27,7 +27,7 @@ const Home = () => {
     }
   };
 
-  const touchEvent = e => {
+  const touchEvent = (e) => {
     switch (e.type) {
       case 'touchstart':
         setTouchStart(e.touches[0].clientY);

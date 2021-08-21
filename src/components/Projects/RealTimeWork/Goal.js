@@ -198,14 +198,14 @@ const Goal = () => {
           <ul id="body">
             <li>
               <img src={clock} />
-              <p>직원간의 빠른 소통을 위한</p>
+              <p>동료간의 빠른 소통을 위한</p>
               <p>실시간으로 생성&#183;변경되는 Work</p>
             </li>
-            <li>
+            {/* <li>
               <img src={money} />
               <p>wfadsfdsafasd</p>
               <p>asdfasdfasfasgadgas</p>
-            </li>
+            </li> */}
             <li>
               <img src={cycle} />
               <p>정확한 요청&#183;응답을 통한</p>

@@ -132,7 +132,7 @@ const Used = () => {
     <UsedStyle>
       <div className="bar"></div>
       <div className="item">
-        <strong className="num">05</strong>
+        <strong className="num">04</strong>
         <div className="detail">
           <ul id="head">
             <strong>기술스택</strong>
